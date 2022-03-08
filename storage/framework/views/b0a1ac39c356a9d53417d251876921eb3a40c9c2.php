@@ -28,13 +28,11 @@
                         <select class="form-control" name="role">
                             <option value="" selected disabled hidden>Choose here</option>
                             <option value="Administrator">Administrator</option>
-                            <option value="Profesor">Companie</option>
-                            <option value="Elev">Candidat</option>
+                            <option value="Companie">Companie</option>
+                            <option value="Candidat">Candidat</option>
                         </select>
 
                     </div>
-
-
                     <button type="submit" class="btn btn-primary">Salvează modificările</button>
                 </form>
             </div>

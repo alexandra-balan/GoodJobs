@@ -20,9 +20,9 @@ class AdminController extends Controller
     public function index()
     {
         $users = User::where('role', '<>', 'Admin')->get();
-        $nrProfesori = User::where('role', 'Profesor')->count();
+        $nrProfesori = User::where('role', 'Companie')->count();
         $nrUsers = User::all()->count();
-        $nrElevi = User::where('role', 'Elev')->count();
+        $nrElevi = User::where('role', 'Candidat')->count();
         $nrAdministratori = User::where('role', 'Administrator')->count();
         $faraRol = $nrUsers - $nrElevi - $nrProfesori - $nrAdministratori;
         $rezultat = [
@@ -64,7 +64,7 @@ class AdminController extends Controller
         $validator = Validator::make($request->all(), [
             'name' => ['required', 'string', 'max:255'],
             'username' => ['required', 'string', 'max:255', Rule::unique('users')->ignore($id)],
-            'role' => ['required', Rule::in(['Administrator', 'Profesor', 'Elev']),]
+            'role' => ['required', Rule::in(['Administrator', 'Companie', 'Candidat']),]
         ]);
 
         $user = User::find($id);

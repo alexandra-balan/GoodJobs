@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\Candidate;
+use App\Company;
 use App\User;
 use App\Teacher;
 use App\Http\Controllers\Controller;
@@ -64,20 +66,24 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        dd($data);
+//        dd($data);
         $user = User::create([
             'name' => $data['name'],
             'username' => $data['username'],
             'password' => Hash::make($data['password']),
-            'role' => $data['company'] !== 'on' ? "Candidat" : "N\A"
+            'role' => isset($data['company']) && $data['company'] === 'on' ? "N\A" : "Candidat"
         ]);
-        if ($data['company'] === 'on') {
-            $company = new Compa();
+        if (isset($data['company']) && $data['company'] === 'on') {
+            $company = new Company();
             $company->name = $data['name'];
             $company->user_id = $user->id;
             $company->save();
+        } else {
+            $candidate = new Candidate();
+            $candidate->name = $data['name'];
+            $candidate->user_id = $user->id;
+            $candidate->save();
         }
-
 
         return $user;
     }

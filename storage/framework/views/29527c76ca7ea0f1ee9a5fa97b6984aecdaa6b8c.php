@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="<?php echo e(str_replace('_', '-', app()->getLocale())); ?>">
 <head>
+    <style>
+        body {
+            background-image: <?php echo e(url('./test.jpg')); ?>;
+        }
+    </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -57,30 +62,33 @@
                         <?php endif; ?>
                     </ul>
             <?php else: ?>
-                <?php if(Auth::user()->role == 'Profesor' || Auth::user()->role == 'Administrator'): ?>
+                <?php if(Auth::user()->role == 'Companie' || Auth::user()->role == 'Administrator'): ?>
                     <!-- Left Side Of Navbar -->
                         <ul class="navbar-nav mr-0">
                             <li class="nav-item">
-                                <a class="nav-link" href="<?php echo e(route('students.index')); ?>"><?php echo e(__('Elevi')); ?></a>
+                                <a class="nav-link" href="<?php echo e(route('candidates.index')); ?>"><?php echo e(__('Candidati')); ?></a>
                             </li>
                             <li>
-                                <a class="nav-link" href="<?php echo e(route('studentClasses.index')); ?>"><?php echo e(__('Clase')); ?></a>
-                            </li>
-                            
-                            
-                            
-                            
-                            
-                            
-                            <li>
-                                <a class="nav-link" href="<?php echo e(route('subjects.index')); ?>"><?php echo e(__('Materii')); ?></a>
+                                <a class="nav-link" href="<?php echo e(route('articles.index')); ?>"><?php echo e(__('Articole')); ?></a>
                             </li>
                             <li>
-                                <a class="nav-link" href="<?php echo e(route('questions.index')); ?>"><?php echo e(__('Exerciții')); ?></a>
+                                <a class="nav-link" href="<?php echo e(route('jobs.index')); ?>"><?php echo e(__('Joburile mele')); ?></a>
                             </li>
-                            <li>
-                                <a class="nav-link" href="<?php echo e(route('studentAnswers.index')); ?>"><?php echo e(__('Răspunsuri')); ?></a>
-                            </li>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
                             
                             
                             
@@ -90,31 +98,50 @@
 
                         <ul class="navbar-nav ml-auto">
 
-                            <form class="form-inline my-2 my-lg-0" action="<?php echo e(route(('searchStudent'))); ?>" method="POST"
+                            <form class="form-inline my-2 my-lg-0" action="<?php echo e(route(('searchJob'))); ?>"
+                                  method="POST"
                                   role="search">
                                 <?php echo e(csrf_field()); ?>
 
-                                <input class="form-control mr-sm-2" type="text" placeholder="Caută" name="searchName">
+                                <input class="form-control mr-sm-2" type="text" placeholder="Caută"
+                                       name="searchName">
                                 <button class="btn btn-secondary my-2 my-sm-0" type="submit">Caută</button>
                             </form>
                             <?php endif; ?>
 
 
 
-                            <?php if(Auth::user()->role == 'Elev'): ?>
+                            <?php if(Auth::user()->role == 'Candidat'): ?>
                                 <ul class="navbar-nav mr-auto">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="<?php echo e(route('students.index')); ?>"><?php echo e(__('Elevi')); ?></a>
+                                        <a class="nav-link" href="<?php echo e(route('showCandidate')); ?>"><?php echo e(__('Profilul meu')); ?></a>
                                     </li>
                                     <li>
-                                        <a class="nav-link" href="<?php echo e(route('questions.index')); ?>"><?php echo e(__('Exerciții')); ?></a>
+                                        <a class="nav-link" href="<?php echo e(route('articles.index')); ?>"><?php echo e(__('Articole')); ?></a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link" href="<?php echo e(route('jobs.index')); ?>"><?php echo e(__('Joburi')); ?></a>
                                     </li>
                                     <li>
                                         <a class="nav-link"
-                                           href="<?php echo e(route('studentAnswers.index')); ?>"><?php echo e(__('Răspunsuri')); ?></a>
+                                           href="<?php echo e(route('candidateJobs.index')); ?>"><?php echo e(__('Aplicarile mele')); ?></a>
                                     </li>
+                                    
+                                    
+                                    
+                                    
                                 </ul>
-                                <ul class="navbar-nav ml-auto"></ul>
+                                <ul class="navbar-nav ml-auto">
+                                    <form class="form-inline my-2 my-lg-0" action="<?php echo e(route(('searchJob'))); ?>"
+                                          method="POST"
+                                          role="search">
+                                        <?php echo e(csrf_field()); ?>
+
+                                        <input class="form-control mr-sm-2" type="text" placeholder="Caută"
+                                               name="searchName">
+                                        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Caută</button>
+                                    </form>
+                                </ul>
                             <?php endif; ?>
 
                             <?php if(Auth::user()->role == 'Administrator'): ?>
@@ -128,18 +155,18 @@
 
 
                             <ul class="navbar-nav ml-auto">
-
-
-
-
-
-
+                                
+                                
+                                
+                                
+                                
+                                
                                 <li class="nav-item">
-                                    <?php if(Auth::user()->role == 'Elev'): ?>
-                                        <a class="nav-link" href="<?php echo e(route('changePassword')); ?>"><?php echo e(Auth::user()->name); ?></a>
-                                        <?php else: ?>
+                                    <?php if(Auth::user()->role == 'Companie'): ?>
+                                        <a class="nav-link" href="<?php echo e(route('showCompany')); ?>"><?php echo e(Auth::user()->name); ?></a>
+                                    <?php else: ?>
                                         <a class="nav-link" href="#"><?php echo e(Auth::user()->name); ?></a>
-                                        <?php endif; ?>
+                                    <?php endif; ?>
 
                                 </li>
                                 <li class="nav-item">

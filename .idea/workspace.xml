@@ -4,7 +4,123 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3048f29b-0361-4c80-a37e-a5ba4335ae81" name="Default Changelist" comment="" />
+    <list default="true" id="3048f29b-0361-4c80-a37e-a5ba4335ae81" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Article.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Candidate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/CandidateJob.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/CandidateController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/CandidateJobController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/JobController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Job.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_10_132823_add_new_columns_to_candidates.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_10_133213_add_new_to_jobs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_25_183409_add_new_columns_to_companies.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_05_13_190544_change_content_length.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_05_27_184626_change_description_length.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_06_03_185723_add_new_columns_to_jobs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_06_03_190457_add_new_columns_to_companies.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_06_03_190640_add_new_columns_to_candidates.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_06_08_162053_add_new_column_to_candidates.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_06_08_170035_delete_unused_columns.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/test.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Articles/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Articles/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Articles/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/CandidateJobs/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/CandidateJobs/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/CandidateJobs/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Candidates/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Candidates/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Candidates/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Companies/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Companies/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Jobs/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Jobs/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Jobs/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/cache/data/0b/65/0b65d7529377c5830adc2a82d125611a7719034b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/cache/data/25/5f/255ffc734a6db9fc05646abba5732a36e687fcdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/cache/data/40/d5/40d5507d4e965af49471e40dc0a72a20621399a6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/cache/data/47/6a/476a8016b9c182da5a163d2302c73df7f7c287ea" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/cache/data/4a/37/4a375d22a16586a71c6173f9364ebc9dde80c7f8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/cache/data/5e/86/5e863d99c1ac114b3af4f69e9291f7a9860e6b9e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/cache/data/9b/8f/9b8fbceec0ee760d1841965e94720dcfee3e2ac5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/cache/data/a1/88/a188205916ce436c10af5a5344d6774631a4ac60" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/cache/data/ad/14/ad144f7c09af29d65361eed1ec751d7c6ea0844a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/cache/data/af/ac/afac4f5fe09da22e115fb2819bd91f3825192ced" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/00c038d22e101f196747a8bf64885e17bab11edb.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/1b81d4bd85e148d88c2fc7afcd06244368a76586.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/2a32d3556d8e80badf48189af8c3df595c9f940c.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/33f808327b2ac40b1032bcfd979a6138e04348e8.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/3988cfca62bd82aaf302fec60d037b28b4e6e9df.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/586d6bfcbd0bbef9982d8cc7946d5169ed436c13.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/7323479fb49eaafc51e67b6ee40df90bddef3189.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/bd33328a84ff4d673a8567cc60defbfa966c6ad0.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/c4db58d53fa8d38691de1747a8383de6c755c44e.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/e4b12ac608a721cb6ccfd161715b542f41dc7c30.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/f31f4ec08092fb4dd9c2d44f7a195332693e8d9c.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/ff671ea3790647da4d1caa2cee9375ab92ff8034.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/logs/laravel-2021-04-04.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/logs/laravel-2021-04-10.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/logs/laravel-2021-04-25.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/logs/laravel-2021-04-26.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/logs/laravel-2021-04-27.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/logs/laravel-2021-04-28.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/logs/laravel-2021-04-29.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/logs/laravel-2021-05-13.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/logs/laravel-2021-05-27.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/logs/laravel-2021-06-08.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/logs/laravel-2021-06-13.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/TestLaravel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/GoodJobs.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ea81aa97-8917-43a0-8f1b-d96d0ce12436.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ea81aa97-8917-43a0-8f1b-d96d0ce12436.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ea81aa97-8917-43a0-8f1b-d96d0ce12436/storage_v2/_src_/database/laravel.uWob_Q/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ea81aa97-8917-43a0-8f1b-d96d0ce12436/storage_v2/_src_/database/laravel.uWob_Q/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Company.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Company.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CompanyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CompanyController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_04_04_160611_create_candidate_jobs_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_22_184108_create_subjects_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_04_04_160548_create_articles_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_22_184341_create_student_classes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_04_03_161026_create_candidates_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_22_184514_create_students_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_22_184649_create_teachers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_04_04_155934_create_jobs_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_22_184810_create_classes_subjects_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_22_184928_create_grades_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_22_221715_create_questions_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_22_223137_create_student_answers_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_22_223851_create_teacher_answers_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_04_03_155304_create_companies_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_04_03_155304_create_companies_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Admin/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Admin/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/29527c76ca7ea0f1ee9a5fa97b6984aecdaa6b8c.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/29527c76ca7ea0f1ee9a5fa97b6984aecdaa6b8c.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/2e4d06c5d0b2d6d3b721968ad961ee90754c7544.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/2e4d06c5d0b2d6d3b721968ad961ee90754c7544.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/615ad61eeaa5d6a25b2563951ae4b9a64b00f88c.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/615ad61eeaa5d6a25b2563951ae4b9a64b00f88c.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/8898ca3c495461748713a7706872db0448383c22.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/8898ca3c495461748713a7706872db0448383c22.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/b0a1ac39c356a9d53417d251876921eb3a40c9c2.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/b0a1ac39c356a9d53417d251876921eb3a40c9c2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/logs/laravel-2020-01-23.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/logs/laravel-2020-01-24.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/logs/laravel-2020-01-25.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/logs/laravel-2020-01-26.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/logs/laravel-2020-01-28.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/logs/laravel-2020-01-30.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/logs/laravel-2020-01-31.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/logs/laravel-2020-02-08.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/logs/laravel-2020-02-09.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/logs/laravel-2020-02-12.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/logs/laravel-2020-02-13.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/logs/laravel-2021-04-03.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel-2021-04-03.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -118,7 +234,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -221,22 +337,29 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1VLVlQLXj5cLx2TNnlBOXpxEwrb" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql&#10;postgresql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="ToolWindowGit.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Alexandra\LicentaStefi\kidlearn\public" />
       <recent name="C:\xampp\htdocs\TestLaravel\database" />
       <recent name="C:\xampp\htdocs\TestLaravel" />
     </key>
@@ -267,11 +390,45 @@
       <workItem from="1615660485994" duration="687000" />
       <workItem from="1615661777872" duration="771000" />
       <workItem from="1615662777368" duration="2145000" />
-      <workItem from="1617460849024" duration="1728000" />
+      <workItem from="1617460849024" duration="4154000" />
+      <workItem from="1617551606338" duration="5115000" />
+      <workItem from="1618058811223" duration="7085000" />
+      <workItem from="1618257083029" duration="611000" />
+      <workItem from="1619372719000" duration="10834000" />
+      <workItem from="1619457992047" duration="7535000" />
+      <workItem from="1619550882345" duration="3088000" />
+      <workItem from="1619631667281" duration="468000" />
+      <workItem from="1619632329877" duration="501000" />
+      <workItem from="1619632858596" duration="64000" />
+      <workItem from="1619632968352" duration="9218000" />
+      <workItem from="1619644995086" duration="221000" />
+      <workItem from="1619672848866" duration="3666000" />
+      <workItem from="1620927445492" duration="8604000" />
+      <workItem from="1622138739593" duration="6131000" />
+      <workItem from="1622746118433" duration="2702000" />
+      <workItem from="1622974885849" duration="1353000" />
+      <workItem from="1623168764326" duration="5774000" />
+      <workItem from="1623579624522" duration="2395000" />
+      <workItem from="1626451662774" duration="1070000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

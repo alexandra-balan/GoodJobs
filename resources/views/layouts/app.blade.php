@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
+    <style>
+        body {
+            background-image: {{url('./test.jpg')}};
+        }
+    </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -56,63 +61,84 @@
                         @endif
                     </ul>
             @else
-                @if(Auth::user()->role == 'Profesor' || Auth::user()->role == 'Administrator')
+                @if(Auth::user()->role == 'Companie' || Auth::user()->role == 'Administrator')
                     <!-- Left Side Of Navbar -->
                         <ul class="navbar-nav mr-0">
                             <li class="nav-item">
-                                <a class="nav-link" href="{{route('students.index')}}">{{__('Elevi')}}</a>
+                                <a class="nav-link" href="{{route('candidates.index')}}">{{__('Candidati')}}</a>
                             </li>
                             <li>
-                                <a class="nav-link" href="{{route('studentClasses.index')}}">{{__('Clase')}}</a>
+                                <a class="nav-link" href="{{route('articles.index')}}">{{__('Articole')}}</a>
                             </li>
+                            <li>
+                                <a class="nav-link" href="{{route('jobs.index')}}">{{__('Joburile mele')}}</a>
+                            </li>
+                            {{--                            <li>--}}
+                            {{--                                <a class="nav-link" href="{{route('jobs.index')}}">{{__('Joburi')}}</a>--}}
+                            {{--                            </li>--}}
                             {{--                            <li>--}}
                             {{--                                <a class="nav-link" href="{{route('students.create')}}">{{__('Adaugă elev')}}</a>--}}
                             {{--                            </li>--}}
                             {{--                            <li>--}}
                             {{--                                <a class="nav-link" href="{{route('studentClasses.create')}}">{{__('Add Class')}}</a>--}}
                             {{--                            </li>--}}
-                            <li>
-                                <a class="nav-link" href="{{route('subjects.index')}}">{{__('Materii')}}</a>
-                            </li>
-                            <li>
-                                <a class="nav-link" href="{{route('questions.index')}}">{{__('Exerciții')}}</a>
-                            </li>
-                            <li>
-                                <a class="nav-link" href="{{route('studentAnswers.index')}}">{{__('Răspunsuri')}}</a>
-                            </li>
                             {{--                            <li>--}}
-                            {{--                                <a class="nav-link" href="{{route('subjects.create')}}">{{__('Add Subject')}}</a>--}}
+                            {{--                                <a class="nav-link" href="{{route('articles.index')}}">{{__('Articole')}}</a>--}}
                             {{--                            </li>--}}
+                            {{--                            <li>--}}
+                            {{--                                <a class="nav-link" href="{{route('candidateJobs.index')}}">{{__('Aplicari la joburi')}}</a>--}}
+                            {{--                            </li>--}}
+                            {{--                            --}}{{--                            <li>--}}
+                            {{--                            --}}{{--                                <a class="nav-link" href="{{route('subjects.create')}}">{{__('Add Subject')}}</a>--}}
+                            {{--                            --}}{{--                            </li>--}}
 
 
                         </ul>
 
                         <ul class="navbar-nav ml-auto">
 
-                            <form class="form-inline my-2 my-lg-0" action="{{route(('searchStudent'))}}" method="POST"
+                            <form class="form-inline my-2 my-lg-0" action="{{route(('searchJob'))}}"
+                                  method="POST"
                                   role="search">
                                 {{ csrf_field() }}
-                                <input class="form-control mr-sm-2" type="text" placeholder="Caută" name="searchName">
+                                <input class="form-control mr-sm-2" type="text" placeholder="Caută"
+                                       name="searchName">
                                 <button class="btn btn-secondary my-2 my-sm-0" type="submit">Caută</button>
                             </form>
                             @endif
 
 
 
-                            @if(Auth::user()->role == 'Elev')
+                            @if(Auth::user()->role == 'Candidat')
                                 <ul class="navbar-nav mr-auto">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{route('students.index')}}">{{__('Elevi')}}</a>
+                                        <a class="nav-link" href="{{route('showCandidate')}}">{{__('Profilul meu')}}</a>
                                     </li>
                                     <li>
-                                        <a class="nav-link" href="{{route('questions.index')}}">{{__('Exerciții')}}</a>
+                                        <a class="nav-link" href="{{route('articles.index')}}">{{__('Articole')}}</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link" href="{{route('jobs.index')}}">{{__('Joburi')}}</a>
                                     </li>
                                     <li>
                                         <a class="nav-link"
-                                           href="{{route('studentAnswers.index')}}">{{__('Răspunsuri')}}</a>
+                                           href="{{route('candidateJobs.index')}}">{{__('Aplicarile mele')}}</a>
                                     </li>
+                                    {{--                                    <li>--}}
+                                    {{--                                        <a class="nav-link"--}}
+                                    {{--                                           href="{{route('candidateJobs.index')}}">{{__('Aplicarile mele')}}</a>--}}
+                                    {{--                                    </li>--}}
                                 </ul>
-                                <ul class="navbar-nav ml-auto"></ul>
+                                <ul class="navbar-nav ml-auto">
+                                    <form class="form-inline my-2 my-lg-0" action="{{route(('searchJob'))}}"
+                                          method="POST"
+                                          role="search">
+                                        {{ csrf_field() }}
+                                        <input class="form-control mr-sm-2" type="text" placeholder="Caută"
+                                               name="searchName">
+                                        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Caută</button>
+                                    </form>
+                                </ul>
                             @endif
 
                             @if(Auth::user()->role == 'Administrator')
@@ -126,18 +152,18 @@
 
 
                             <ul class="navbar-nav ml-auto">
-{{--                                <form class="form-inline my-2 my-lg-0" action="{{route(('searchStudent'))}}" method="POST"--}}
-{{--                                      role="search">--}}
-{{--                                    {{ csrf_field() }}--}}
-{{--                                    <input class="form-control mr-sm-2" type="text" placeholder="Search" name="searchName">--}}
-{{--                                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Caută</button>--}}
-{{--                                </form>--}}
+                                {{--                                <form class="form-inline my-2 my-lg-0" action="{{route(('searchStudent'))}}" method="POST"--}}
+                                {{--                                      role="search">--}}
+                                {{--                                    {{ csrf_field() }}--}}
+                                {{--                                    <input class="form-control mr-sm-2" type="text" placeholder="Search" name="searchName">--}}
+                                {{--                                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Caută</button>--}}
+                                {{--                                </form>--}}
                                 <li class="nav-item">
-                                    @if(Auth::user()->role == 'Elev')
-                                        <a class="nav-link" href="{{route('changePassword')}}">{{ Auth::user()->name }}</a>
-                                        @else
+                                    @if(Auth::user()->role == 'Companie')
+                                        <a class="nav-link" href="{{route('showCompany')}}">{{ Auth::user()->name }}</a>
+                                    @else
                                         <a class="nav-link" href="#">{{ Auth::user()->name }}</a>
-                                        @endif
+                                    @endif
 
                                 </li>
                                 <li class="nav-item">

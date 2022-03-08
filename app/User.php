@@ -37,14 +37,14 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function teacher()
+    public function company()
     {
-        return $this->hasOne('App\Teacher');
+        return $this->hasOne('App\Company');
     }
 
-    public function student()
+    public function candidate()
     {
-        return $this->hasOne('App\Student');
+        return $this->hasOne('App\Candidate');
     }
 
 }

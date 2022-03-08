@@ -17,8 +17,8 @@
 
                     <select class="form-control" name="filter">
                         <option value="" selected disabled hidden>Alege aici</option>
-                        <option value="Profesor">Profesori</option>
-                        <option value="Elev">Elevi</option>
+                        <option value="Companie">Companii</option>
+                        <option value="Candidat">Candidati</option>
                         <option value="Administrator">Administratori</option>
                         <option value="N/A">Fără rol</option>
                     </select>

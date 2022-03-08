@@ -88,7 +88,7 @@ endif; ?>
                                 <label for="company" class="col-md-4 col-form-label text-md-right"><?php echo e(__('Companie')); ?></label>
 
                                 <div class="col-md-6">
-                                    <input id="company" type="checkbox" class="custom-checkbox" name="company" required autocomplete="new-password">
+                                    <input id="company" type="checkbox" class="custom-checkbox" name="company">
                                 </div>
                             </div>
 
